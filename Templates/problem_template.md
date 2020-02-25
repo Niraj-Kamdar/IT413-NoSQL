@@ -11,7 +11,7 @@
 ```
 
 ## How to Run Solution
-To run the fractions operation in python program, grab a copy of the `filename` file
+To run this python program, grab a copy of the `filename` file
 from GitHub. After that, get the latest version of `python` and install `mrjob` using following command
 ```console
 pip install mrjob
