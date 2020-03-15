@@ -14,8 +14,8 @@ def batch_write(table_name, contents):
 if __name__ == "__main__":
     dynamodb = boto3.resource('dynamodb', region_name='ap-south-1', endpoint_url="http://localhost:8000")
 
-    fd = open(r"data\books.json", "r")
-    books_obj = json.loads(fd.read())
+    with open(r"data\books.json", "r") as fd:
+        books_obj = json.loads(fd.read())
 
-    obj = books_obj["books"][1:100]
-    batch_write("Books", obj)
+        obj = books_obj["books"][1:100]
+        batch_write("Books", obj)
