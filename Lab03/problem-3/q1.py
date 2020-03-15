@@ -21,37 +21,33 @@ def batch_write(table_name, contents):
 # Add Users Data in DB
 def add_users():
     print("Adding Users...")
-    fd = open("data/users.json", "r")
-    fd_content = json.loads(fd.read())
-    batch_write("Users", fd_content)
-    fd.close()
+    with open("data/users.json", "r") as fd:
+        fd_content = json.loads(fd.read())
+        batch_write("Users", fd_content)
 
 
 # Add Repositories Data in DB
 def add_repositories():
     print("Adding Repositories...")
-    fd = open("data/repositories.json", "r")
-    fd_content = json.loads(fd.read())
-    batch_write("Repositories", fd_content)
-    fd.close()
+    with open("data/repositories.json", "r") as fd:
+        fd_content = json.loads(fd.read())
+        batch_write("Repositories", fd_content)
 
 
 # Add Commits Data in DB
 def add_commits():
     print("Adding Commits...")
-    fd = open("data/commits.json", "r")
-    fd_content = json.loads(fd.read())
-    batch_write("Commits", fd_content)
-    fd.close()
+    with open("data/commits.json", "r") as fd:
+        fd_content = json.loads(fd.read())
+        batch_write("Commits", fd_content)
 
 
 # Add Issues Data in DB
 def add_issues():
     print("Adding Issues...")
-    fd = open("data/issues.json", "r")
-    fd_content = json.loads(fd.read())
-    batch_write("Issues", fd_content)
-    fd.close()
+    with open("data/issues.json", "r") as fd:
+        fd_content = json.loads(fd.read())
+        batch_write("Issues", fd_content)
 
 
 # Creates 'Users' Table in DB
