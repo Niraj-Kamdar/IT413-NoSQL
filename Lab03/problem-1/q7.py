@@ -1,7 +1,7 @@
 from pprint import pprint
-from boto3.dynamodb.conditions import Key
 
 import boto3
+from boto3.dynamodb.conditions import Key
 
 # Write Code here
 if __name__ == "__main__":

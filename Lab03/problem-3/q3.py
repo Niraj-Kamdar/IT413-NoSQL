@@ -1,5 +1,6 @@
-from pprint import pprint
 from datetime import datetime as dt
+from pprint import pprint
+
 import boto3
 from boto3.dynamodb.conditions import Key
 

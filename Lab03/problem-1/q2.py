@@ -1,6 +1,7 @@
 # app_put.py
-import boto3
 import json
+
+import boto3
 
 
 def put_item(table_name, content):

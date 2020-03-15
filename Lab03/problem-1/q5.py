@@ -1,6 +1,7 @@
 # app_get_second.py
-import boto3
 from pprint import pprint
+
+import boto3
 from boto3.dynamodb.conditions import Key
 
 

@@ -1,6 +1,7 @@
 # app_batch_write.py
-import boto3
 import json
+
+import boto3
 
 
 def batch_write(table_name, contents):

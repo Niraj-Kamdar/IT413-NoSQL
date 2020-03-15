@@ -1,6 +1,7 @@
 # app_get.py
-import boto3
 from pprint import pprint
+
+import boto3
 
 
 def get_item(table_name, key):
